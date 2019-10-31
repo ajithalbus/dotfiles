@@ -1,0 +1,2 @@
+nohup redis-sentinel /Users/ajith.km/WorkUtility/redis-2.8.24/sentinel.conf &
+nohup redis-server &
