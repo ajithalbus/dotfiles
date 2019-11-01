@@ -1,0 +1,92 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/Users/ajith.km/
+	..
+1572448208
+'b
+	/Users/ajith.km/bin/
+	..
+1572448898
+'h
+	/Users/ajith.km/
+	..
+1572448898
+'z
+	/Users/ajith.km/.config/vifm
+	..
+1572448208
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/Users/ajith.km/del/dotfiles
+	..
+0
+d/Users/ajith.km
+	del
+11
+d/Users/ajith.km/del
+	wallpapers
+5
+d/Users/ajith.km/del/wallpapers
+	..
+0
+d/Users/ajith.km/del
+	wallpapers
+5
+d/Users/ajith.km
+	del
+11
+d/Users/ajith.km/del
+	cms.postman_collection.json
+7
+d/Users/ajith.km
+	del
+11
+d
+
+# Right window history (oldest to newest):
+D/Users/ajith.km
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:cw
+:set number
+:x
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
