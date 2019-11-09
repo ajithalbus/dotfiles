@@ -13,6 +13,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 DEFAULT_USER=$(whoami)
 POWERLEVEL9K_MODE="awesome-patched"
 
+#auto complete
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)   # Include hidden files.
+
 
 ZLE_RPROMPT_INDENT=0
 
@@ -195,6 +202,10 @@ bindkey -v
 # bindkey '"\C-t": "\ei $(__fsel)\C-x\C-e\C-x\C-r"'
 # bindkey '"\C-r": "\eddi$(HISTTIMEFORMAT= history | fzf +s | sed \"s/ *[0-9]* *//\")\C-x\C-e\C-x\C-r\e$"'
 #bindkey '^r' fzf-history-widget
+
+autoload edit-command-line; zle -N edit-command-line
+bindkey "^E" edit-command-line
+
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
