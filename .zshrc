@@ -213,3 +213,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 alias sb="ssh ajith.km@localhost -p 2222"
 alias sbstart="VBoxManage startvm Ubuntu\ Server  --type headless"
 alias config='/usr/bin/git --git-dir=/Users/ajith.km/.cfg/ --work-tree=/Users/ajith.km'
+
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_211`
