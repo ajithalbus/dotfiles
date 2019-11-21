@@ -1,0 +1,37 @@
+{
+  "hotkey": "alt+space",
+  "theme": "marcpaul/zazu-solarized-dark-theme",
+  "displayOn": "detect",
+  "plugins": [
+    "tinytacoteam/zazu-calculator",
+    "tinytacoteam/zazu-file-finder",
+    "tinytacoteam/zazu-template",
+    "tinytacoteam/zazu-system",
+    "tinytacoteam/zazu-package-manager",
+    "puyt/zazu-utime",
+    "tinytacoteam/zazu-snippets",
+    {
+      "name": "tinytacoteam/zazu-fallback",
+      "variables": {
+        "rootSearches": [
+          "google"
+        ]
+      }
+    },
+    {
+      "name": "tinytacoteam/zazu-clipboard",
+      "variables": {
+        "ClipboardKey": "cmd+shift+v"
+      }
+    },
+    {
+  "name": "amjith/zazu-mac-open-terminal",
+  "variables": {
+    "OpenTerminalKey": "cmd+shift+t",
+    "terminal": "iterm2",
+  }
+},
+    "blakek/zazu-ip-address",
+    "amjith/zazu-mac-open-terminal"
+  ]
+}

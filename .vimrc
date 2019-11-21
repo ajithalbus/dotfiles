@@ -20,7 +20,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 
 Plug 'junegunn/goyo.vim'
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 call vundle#begin()		" required, all plugins must appear after this line.
