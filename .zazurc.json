@@ -1,6 +1,6 @@
 {
   "hotkey": "alt+space",
-  "theme": "marcpaul/zazu-solarized-dark-theme",
+  "theme": "Eric-Jackson/zazu-clement-theme",
   "displayOn": "detect",
   "plugins": [
     "tinytacoteam/zazu-calculator",
@@ -21,7 +21,8 @@
     {
       "name": "tinytacoteam/zazu-clipboard",
       "variables": {
-        "ClipboardKey": "cmd+shift+v"
+        "ClipboardKey": "cmd+shift+v",
+        "size": 10000
       }
     },
     {
