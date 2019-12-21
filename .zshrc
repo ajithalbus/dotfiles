@@ -157,7 +157,7 @@ alias grep='grep --colour=auto'
 
 zstyle ':completion:*' completer _expand_alias _complete _ignored
 
-alias tb="nc termbin.com 9999"
+alias tb="nc termbin.com 9999 | pbcopy"
 
 export MANPAGER="/bin/sh -c \"col -b | vim --not-a-term -c 'set ft=man ts=8 nomod nolist noma' -\""
 #bindkey "^[f" forward-word      # deletes everything right of the prompt.
