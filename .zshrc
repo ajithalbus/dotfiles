@@ -215,3 +215,5 @@ alias sbstart="VBoxManage startvm Ubuntu\ Server  --type headless"
 alias config='/usr/bin/git --git-dir=/Users/ajith.km/.cfg/ --work-tree=/Users/ajith.km'
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_211`
+
+alias vim="nvim"

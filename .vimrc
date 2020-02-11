@@ -25,6 +25,7 @@ call plug#end()
 
 call vundle#begin()		" required, all plugins must appear after this line.
 
+Plugin 'easymotion/vim-easymotion'
 Plugin 'gmarik/Vundle.vim'							" Vundle
 Plugin 'vim-airline/vim-airline'					" Airline
 Plugin 'vim-airline/vim-airline-themes'				" Airline Themes
@@ -62,16 +63,16 @@ filetype plugin indent on    " required
 :imap ii <Esc>
 
 "Disable arrow keys in Normal mode
-no <Up> <Nop>
-no <Down> <Nop>
-no <Left> <Nop>
-no <Right> <Nop>
+"no <Up> <Nop>
+"no <Down> <Nop>
+"no <Left> <Nop>
+"no <Right> <Nop>
 
-"Disable arrow keys in Insert mode
-ino <Up> <Nop>
-ino <Down> <Nop>
-ino <Left> <Nop>
-ino <Right> <Nop>
+"""Disable arrow keys in Insert mode
+"ino <Up> <Nop>
+"ino <Down> <Nop>
+"ino <Left> <Nop>
+"ino <Right> <Nop>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Powerline
