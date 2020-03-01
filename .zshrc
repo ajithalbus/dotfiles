@@ -81,7 +81,7 @@ ZLE_RPROMPT_INDENT=0
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git web-search git-extras)
+plugins=(git web-search git-extras encode64 extract jira osx redis-cli sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -209,11 +209,17 @@ bindkey "^E" edit-command-line
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-
-alias sb="ssh ajith.km@localhost -p 2222"
-alias sbstart="VBoxManage startvm Ubuntu\ Server  --type headless"
 alias config='/usr/bin/git --git-dir=/Users/ajith.km/.cfg/ --work-tree=/Users/ajith.km'
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_211`
 
 alias vim="nvim"
+alias jp="joplin"
+
+export JIRA_URL="https://jira.fkinternal.com"
+
+alias fvim='nvim `fzf`'
+alias wttr='curl wttr.in'
+
+
+fortune | cowsay | lolcat

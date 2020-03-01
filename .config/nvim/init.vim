@@ -5,6 +5,7 @@ source ~/.vimrc
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'arzg/vim-colors-xcode'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 "Plug 'tsony-tsonev/nerdtree-git-plugin'
@@ -15,11 +16,17 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 Plug 'hdiniz/vim-gradle'
+Plug 'junegunn/goyo.vim'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 "Plug 'christoomey/vim-tmux-navigator'
 
+" color schemes
 Plug 'morhetz/gruvbox'
+Plug 'sainnhe/gruvbox-material'
+Plug 'sheerun/vim-polyglot'
+Plug 'dracula/vim', { 'as': 'dracula' }
+
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
@@ -37,17 +44,17 @@ nmap ++ <plug>NERDCommenterToggle
 
 let g:NERDTreeGitStatusWithFlags = 1
 "let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-"let g:NERDTreeGitStatusNodeColorization = 1
-"let g:NERDTreeColorMapCustom = {
-    "\ "Staged"    : "#0ee375",  
-    "\ "Modified"  : "#d9bf91",  
-    "\ "Renamed"   : "#51C9FC",  
-    "\ "Untracked" : "#FCE77C",  
-    "\ "Unmerged"  : "#FC51E6",  
-    "\ "Dirty"     : "#FFBD61",  
-    "\ "Clean"     : "#87939A",   
-    "\ "Ignored"   : "#808080"   
-    "\ }                         
+let g:NERDTreeGitStatusNodeColorization = 1
+let g:NERDTreeColorMapCustom = {
+    \ "Staged"    : "#0ee375",  
+    \ "Modified"  : "#d9bf91",  
+    \ "Renamed"   : "#51C9FC",  
+    \ "Untracked" : "#FCE77C",  
+    \ "Unmerged"  : "#FC51E6",  
+    \ "Dirty"     : "#FFBD61",  
+    \ "Clean"     : "#87939A",   
+    \ "Ignored"   : "#808080"   
+    \ }                         
 
 
 let g:NERDTreeIgnore = ['^node_modules$']
@@ -78,7 +85,20 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
 
-colorscheme gruvbox
+"colors
+"colorscheme gruvbox
+"let g:gruvbox_contrast_dark = 'hard'
+set termguicolors
+
+" for dark version
+set background=dark
+
+" set contrast
+" this configuration option should be placed before `colorscheme gruvbox-material`
+" available values: 'hard', 'medium'(default), 'soft'
+let g:gruvbox_material_background = 'hard'
+
+colorscheme gruvbox-material
 
 " sync open file with NERDTree
 " " Check if NERDTree is open or active
@@ -242,6 +262,13 @@ nnoremap <C-t>     :tabnew<CR>
 inoremap <C-j> <Esc>:tabprevious<CR>i
 inoremap <C-k>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
+
+
+"jump buffers
+"nnoremap <C-m> :bnext<CR>
+"nnoremap <C-b>   :bprevious<CR>
+"inoremap <C-m> <Esc>:bnext<CR>i
+"inoremap <C-b>   <Esc>:bprevious<CR>i
 
 "vim configs
 

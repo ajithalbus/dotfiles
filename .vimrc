@@ -41,6 +41,8 @@ Plugin 'tpope/vim-surround'                         " Change surrounding marks
 Plugin 'hsitz/VimOrganizer'							" Org Mode
 Plugin 'junegunn/fzf.vim'
 
+Bundle 'sonph/onehalf', {'rtp': 'vim/'}
+
 call vundle#end()		" required, all plugins must appear before this line.
 
 filetype plugin indent on    " required
@@ -190,3 +192,5 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
