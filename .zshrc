@@ -222,4 +222,4 @@ alias fvim='nvim `fzf`'
 alias wttr='curl wttr.in'
 
 
-fortune | cowsay | lolcat
+fortune ~/.config/terminalthoughts/showerthoughts | cowsay | lolcat

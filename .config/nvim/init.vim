@@ -5,6 +5,9 @@ source ~/.vimrc
 
 call plug#begin('~/.vim/plugged')
 
+"for git
+Plug 'tpope/vim-fugitive'
+
 Plug 'arzg/vim-colors-xcode'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
@@ -250,6 +253,10 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 
+"jump to tab instead of buffer
+":tabedit % | call CocActionAsync('jumpDefinition')
+
+
 " tab completion remap
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
@@ -263,6 +270,8 @@ inoremap <C-j> <Esc>:tabprevious<CR>i
 inoremap <C-k>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
 
+nnoremap <C-w> :bdelete<CR>
+inoremap <C-w> <Esc>:bdelete<CR>i
 
 "jump buffers
 "nnoremap <C-m> :bnext<CR>
@@ -271,5 +280,6 @@ inoremap <C-t>     <Esc>:tabnew<CR>
 "inoremap <C-b>   <Esc>:bprevious<CR>i
 
 "vim configs
+
 
 
