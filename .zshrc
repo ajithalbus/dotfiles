@@ -81,7 +81,7 @@ ZLE_RPROMPT_INDENT=0
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git web-search git-extras encode64 extract jira osx redis-cli sudo)
+plugins=(git web-search git-extras encode64 extract jira osx redis-cli sudo docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -213,7 +213,7 @@ alias config='/usr/bin/git --git-dir=/Users/ajith.km/.cfg/ --work-tree=/Users/aj
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_211`
 
-alias vim="nvim"
+alias vim="vim"
 alias jp="joplin"
 
 export JIRA_URL="https://jira.fkinternal.com"
@@ -223,3 +223,5 @@ alias wttr='curl wttr.in'
 
 
 fortune ~/.config/terminalthoughts/showerthoughts | cowsay | lolcat
+
+#echo "anomalies : "`curl -s http://10.50.146.196:8000/defaulters.html | wc -l` | cowsay -f small | lolcat
