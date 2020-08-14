@@ -211,7 +211,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 alias config='/usr/bin/git --git-dir=/Users/ajith.km/.cfg/ --work-tree=/Users/ajith.km'
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_211`
+export JAVA_HOME=`/usr/libexec/java_home -v 14.0.1`
+
+alias java14='export JAVA_HOME=`/usr/libexec/java_home -v 14.0.1`'
+alias java8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_211`'
 
 alias vim="vim"
 alias jp="joplin"
@@ -221,6 +224,9 @@ export JIRA_URL="https://jira.fkinternal.com"
 alias fvim='nvim `fzf`'
 alias wttr='curl wttr.in'
 
+alias q='exit'
+
+source ~/.private_zshrc
 
 fortune ~/.config/terminalthoughts/showerthoughts | cowsay | lolcat
 
