@@ -81,7 +81,7 @@ ZLE_RPROMPT_INDENT=0
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git web-search git-extras encode64 extract jira osx redis-cli sudo docker)
+plugins=(git web-search git-extras encode64 extract jira osx redis-cli sudo docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -215,6 +215,9 @@ export JAVA_HOME=`/usr/libexec/java_home -v 14.0.1`
 
 alias java14='export JAVA_HOME=`/usr/libexec/java_home -v 14.0.1`'
 alias java8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_211`'
+alias java7='export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0_80`'
+alias java10='export JAVA_HOME=`/usr/libexec/java_home -v 10.0.2`'
+alias java11='export JAVA_HOME=`/usr/libexec/java_home -v 11.0.1`'
 
 alias vim="vim"
 alias jp="joplin"
@@ -231,3 +234,5 @@ source ~/.private_zshrc
 fortune ~/.config/terminalthoughts/showerthoughts | cowsay | lolcat
 
 #echo "anomalies : "`curl -s http://10.50.146.196:8000/defaulters.html | wc -l` | cowsay -f small | lolcat
+alias ssh="fkst-cli installCert; ssh"
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
