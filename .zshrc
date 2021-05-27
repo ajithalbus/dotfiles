@@ -218,6 +218,8 @@ alias java8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_211`'
 alias java7='export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0_80`'
 alias java10='export JAVA_HOME=`/usr/libexec/java_home -v 10.0.2`'
 alias java11='export JAVA_HOME=`/usr/libexec/java_home -v 11.0.1`'
+alias java15='export JAVA_HOME=`/usr/libexec/java_home -v 15.0.2`'
+alias java16='export JAVA_HOME=`/usr/libexec/java_home -v 16`'
 
 alias vim="vim"
 alias jp="joplin"
@@ -227,7 +229,13 @@ export JIRA_URL="https://jira.fkinternal.com"
 alias fvim='nvim `fzf`'
 alias wttr='curl wttr.in'
 
+alias kplay='export KUBECONFIG=~/.kube/playground/hyd-playground-1_fk-sp-slm-listings_client_config.yml'
+alias klocal='export KUBECONFIG=~/.kube/config'
+alias kpreprod='export KUBECONFIG=~/.kube/preprod/hyd-preprod-1_default_client_config.yml'
+alias kprod='export KUBECONFIG=~/.kube/prod/hyd-prod-1_default_client_config.yml'
+
 alias q='exit'
+alias kc='kubectl'
 
 source ~/.private_zshrc
 
@@ -236,3 +244,10 @@ fortune ~/.config/terminalthoughts/showerthoughts | cowsay | lolcat
 #echo "anomalies : "`curl -s http://10.50.146.196:8000/defaulters.html | wc -l` | cowsay -f small | lolcat
 alias ssh="fkst-cli installCert; ssh"
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+source <(helm completion zsh)
+
+
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
